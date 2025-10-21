@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Pokemon</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/layoutPokemon.css">
+</head>
+<body>
+ <main>
+  <button id="backButton">↩</button>
+  <section class="layoutOne">
+    <div class="detailName">
+      <span class="name">Bulbasaur</span>
+      <span class="number">#001</span>
+    </div>
+
+    <div class="detail">
+      <ol>
+        <li class="type">Grass</li>
+        <li class="type">Poison</li>
+      </ol>
+      <img src="https://raw.githubusercontent.com/pokeApi/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
+    </div>
+  </section>
+  <section class="layoutTwo">
+      <div class="content">
+        <h2>Info Pokemon</h2>
+
+        <div class="config hp">
+          <span class="label">HP</span>
+          <div class="barra">
+            <div id="hpFill" style="width: 45%;"></div>
+          </div>
+          <span class="hp-value">45/100</span>
+        </div>
+
+        <div class="config ataque">
+          <span class="label">Ataque</span>
+          <div class="barra">
+            <div id="ataqueFill" style="width: 49%;"></div>
+          </div>
+          <span class="ataque-value">49/100</span>
+        </div>
+
+        <div class="config defesa">
+          <span class="label">Defesa</span>
+          <div class="barra">
+            <div id="defesaFill" style="width: 49%;"></div>
+          </div>
+          <span class="defesa-value">49/100</span>
+        </div>
+
+        <div class="config ataqueE">
+          <span class="label">Ataque Especial</span>
+          <div class="barra">
+            <div id="ataqueEFill" style="width: 65%;"></div>
+          </div>
+          <span class="ataqueE-value">65/100</span>
+        </div>
+
+        <div class="config defesaE">
+          <span class="label">Defesa Especial</span>
+          <div class="barra">
+            <div id="defesaEFill" style="width: 65%;"></div>
+          </div>
+          <span class="defesaE-value">65/100</span>
+        </div>
+
+        <div class="config velocidade">
+          <span class="label">Velocidade</span>
+          <div class="barra">
+            <div id="velocidadeFill" style="width: 45%;"></div>
+          </div>
+          <span class="velocidade-value">45/100</span>
+        </div>
+
+        <div class="config experiencia">
+          <span class="label">Experiência base</span>
+          <div class="barra">
+            <div id="experienciaFill" style="width: 64%;"></div>
+          </div>
+          <span class="experiencia-value">64/100</span>
+        </div>
+
+        <div class="config altura">
+          <span class="label">Altura</span>
+          <div class="barra">
+            <div id="alturaFill" style="width: 7%;"></div>
+          </div>
+          <span class="altura-value">7</span>
+        </div>
+
+        <div class="config peso">
+          <span class="label">Peso</span>
+          <div class="barra">
+            <div id="pesoFill" style="width: 69%;"></div>
+          </div>
+          <span class="peso-value">69</span>
+        </div>
+      
+      </div>
+    </section>
+  </main>
+<script src="./src/scripts/pokemon-model.js"></script>
+<script src="./src/scripts/poke-api.js"></script>
+<script src="./src/scripts/layoutPokemon.js"></script>
+</body>
+</html>

@@ -15,6 +15,13 @@ function convertPokeApiDetailToPokemon(pokeDetail){
 
   pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
 
+  pokemon.base_experience = pokeDetail.base_experience
+  pokemon.height = pokeDetail.height
+  pokemon.weight = pokeDetail.weight
+
+  pokemon.stats = {}
+  pokeDetail.stats.forEach(stat => {pokemon.stats[stat.stat.name] = stat.base_stat})
+
   return pokemon
 }
 

@@ -1,0 +1,259 @@
+
+body {
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  /* background-color: #77c850; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../image/pokeball.png);
+  background-repeat: no-repeat;
+}
+
+main.normal {
+  background-color: #a6a877;
+}
+
+main.grass {
+  background-color: #77c850;
+}
+
+main.fire {
+  background-color: #ee7f30;
+}
+
+main.water {
+  background-color: #6390F0;
+}
+
+main.flying{
+  background-color: #a98ff0;
+}
+
+main.electric {
+  background-color: #f7cf2e;
+}
+
+main.ice {
+  background-color: #98d5d7;
+}
+
+main.ground {
+  background-color: #dfbf69;
+}
+
+main.flting {
+  background-color: #a98ff0;
+}
+
+main.poison {
+  background-color: #a040a0;
+}
+
+main.fighting {
+  background-color: #bf3029;
+}
+
+main.psychic {
+  background-color: #f65687;
+}
+
+main.dark {
+  background-color: #725847;
+}
+
+main.rock {
+  background-color: #b8a137;
+}
+
+main.bug {
+  background-color: #a8b720;
+}
+
+main.ghost {
+  background-color: #6e5896;
+}
+
+main.steel {
+  background-color: #b9b7cf;
+}
+
+main.dragon {
+  background-color: #6f38f6;
+}
+
+main.fairy {
+  background-color: #f9aec7;
+}
+
+.layoutOne {
+  width: 80%;
+  position: relative;
+  padding: 30px 0;
+}
+
+.detailName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layoutOne .name {
+  color: #fff;
+  font-size: 2.8rem;
+}
+
+.layoutOne .number {
+  color: #fff;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+
+.layoutOne .detail ol {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.layoutOne .detail .type {
+  background-color: #77c850;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  filter: brightness(1.1);
+}
+
+
+.layoutOne .detail img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.layoutTwo {
+  background-color: #ffffff;
+  height: 100vh;
+  border-radius: 20px 20px 0 0;
+  padding-bottom: 40px;
+}
+
+.content h2 {
+  color: #3e7ab3;
+  text-transform: uppercase;
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+
+
+div.config {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 40px;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+
+.barra{
+  flex-grow: .5;
+  width: 200px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+[class$="-value"]{
+  color: #c2c2c2;
+}
+[id$="Fill"]{
+  height: 100%;
+  transition: width 0.5s ease-out; 
+}
+#hpFill{            
+  background-color: #75da68;  
+}
+#ataqueFill{               
+  background-color: #e45b5b;  
+}
+#defesaFill{            
+  background-color: #8ecbfd;  
+}
+#ataqueEFill{      
+  background-color: #fdc478;  
+}
+#defesaEFill{               
+  background-color: #5a74ad;  
+}
+#velocidadeFill{              
+  background-color: #947fdd;  
+}
+#experienciaFill{              
+  background-color: #db6fc9;  
+}
+#alturaFill{               
+  background-color: #70c4ca;  
+}
+#pesoFill{              
+  background-color: #777f80; 
+}
+
+button#backButton{
+  width: auto;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.5rem .9rem;
+  background-color: rgba(0, 0, 255, 0);
+  align-self: flex-start;
+  margin: 10px;
+}
+
+@media screen and (min-width: 380px){
+  main {
+    width: 100%;
+    background-position: center top -40px;
+    background-size: auto, 700px;
+  }
+  .layoutTwo {
+    width: 100%;
+  }
+  .layoutOne .detail img {
+  width: 200px;
+  height: auto;
+}
+}
+@media screen and (min-width: 576px){
+  main{
+    background-size: auto, 1000px;
+    background-position: center top 40px;
+  }
+  .layoutOne .detail img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 992px){
+  main {
+    width: 80%;
+    background-size: auto, 800px;
+    background-position: center top -40px;
+  }
+  .layoutOne .detail img {
+    width: 200px;
+    height: auto;
+  }
+}
